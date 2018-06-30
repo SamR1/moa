@@ -25,13 +25,21 @@ https://moa.party
 
 Moa is a flask app and can be run with `python` or proxied behind something like nginx/passenger.
 
-* clone it
-* make a virtual environment `python3 -m venv .moa-venv`
-* activate `source .moa-venv/bin/activate`
-* `pip install -r requirements.txt`
-* `cp config.py.sample config.py` and fill in the blanks
-* python app.py
-* run the worker with `python -m moa.worker`
+* clone it and change directory
+* install moa
+```bash
+$ make install
+$ make upgrade-db
+```
+* fill in the blanks in `config.py`
+* start the server
+```bash
+$ make serve
+```
+* run the worker
+```bash
+$ make run-worker
+```
 
 ## Features
 * preserves image alt text
