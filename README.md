@@ -29,9 +29,12 @@ Moa is a flask app and can be run with `python` or proxied behind something like
 * install moa
 ```bash
 $ make install
-$ make upgrade-db
 ```
 * fill in the blanks in `config.py`
+* init database
+```bash
+$ make upgrade-db
+```
 * start the server
 ```bash
 $ make serve
